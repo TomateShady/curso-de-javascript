@@ -1,0 +1,15 @@
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+body {
+    width: auto;
+    background-image: url(./imagenes/marshall.jpg);
+}
+
+h1 {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
