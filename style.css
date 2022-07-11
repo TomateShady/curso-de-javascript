@@ -5,11 +5,12 @@
 
 body {
     width: auto;
-    background-image: url(./imagenes/marshall.jpg);
+    background-image: url(./imagenes/rollo.jpg);
 }
 
 h1 {
-    font-size: 72px;
-    color: white;
+    font-size: 92px;
+    color: greenyellow;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
