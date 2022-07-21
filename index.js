@@ -67,37 +67,54 @@
 // }
 
 
- let contenedor = document.getElementById("contenido");
- let productos =  [
-     {id: 1, nombre: "Remera", precio: 2000},   
-     {id: 2, nombre: "Buzo", precio: 3000},   
-     {id: 3, nombre: "Poster", precio: 500},   
-     {id: 4, nombre: "Gorra", precio: 900},
- ];
+//  let contenedor = document.getElementById("contenido");
+//  let productos =  [
+//      {id: 1, nombre: "Remera", precio: 2000},   
+//      {id: 2, nombre: "Buzo", precio: 3000},   
+//      {id: 3, nombre: "Poster", precio: 500},   
+//      {id: 4, nombre: "Gorra", precio: 900},
+//  ];
 
- for (const producto of productos){
-     let li = document.createElement("li");
-     li.innerHTML = ` <h3>ID: ${producto.id}</h3>
-                      <p>Producto: ${producto.nombre}</p>
-                      <b>Precio $${producto.precio}</b>
-                      `;
- contenedor.append(li);
+//  for (const producto of productos){
+//      let li = document.createElement("li");
+//      li.innerHTML = ` <h3>ID: ${producto.id}</h3>
+//                       <p>Producto: ${producto.nombre}</p>
+//                       <b>Precio $${producto.precio}</b>
+//                       `;
+//  contenedor.append(li);
+// }
+
+//------------------------------------------------------EVENTS--------------------------------------
+// let boton = document.getElementById("btnPrincipal");
+
+// boton.addEventListener("mouseup", () => {
+//     console.log("Inscripto");
+// });
+
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+    e.preventDefault();
+    console.log(e.target.children[0].value);
+    console.log(e.target.children[1].value);
+    console.log(e.target.children[2].value);
+    
+    if(e.target.children[1].value.includes("@") && e.target.children[1].value.includes(".")){
+        let mensaje = document.createElement("div");
+        mensaje.innerHTML = "Tus datos fueron registrados correctamente";
+        mensaje.className = "verde";
+        document.body.append(mensaje);
+        e.target.children[0].value = "";
+        e.target.children[1].value = "";
+        e.target.children[2].value = "";
+        
+    }else{
+        let mensaje = document.createElement("div");
+        mensaje.innerHTML = "Datos ingresados incorrectos";
+        mensaje.className = "rojo";
+        document.body.append(mensaje);
+        e.target.children[1].value = "";
+    }  
 }
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
