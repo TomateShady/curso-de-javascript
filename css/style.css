@@ -5,60 +5,75 @@
 }
 
 body{
-    width: auto;
-    /* background-image: url(/Curso/imagenes/rollo.jpg); */
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4, auto);
-    
+    width: auto;   
+    background-image: url(../imagenes/paint\ \(2\).jpg);
 }
 /* --------------------------------------------HEADER--------------------------------------------------- */
 header{
     width: auto;
-    grid-column: 1/5;
-    grid-row: 1/2;
 }
 .navbar{
-    background: black;
+   background: #000;
     width: auto;
+   
 }
 .navbar .navbar-brand{
-    color: white;
-    font-size: 42px;
+    color: snow;
+    font-size: 18px;
     font-weight: bold;
 }
 .navbar .nav-item{
-    font-size: 33px;
+    font-size: 18px;
     font-weight: bold;
 }
 .navbar .nav-item .nav-link{
+    color: snow;
+}
+.navbar .nav-item .nav-link:hover{
+    color: gold;
+    text-decoration: underline;
+}
+.btn-outline-success{
     color: white;
+    border-color: yellow;
+}
+.btn-outline-success:hover{
+    background: yellow;
+    color: black;
+   
 }
 
 header h1{
-    background: black;
-    color: white;
+    background: yellow;
+    color: black;
     text-align: center;
-    font-size: 72px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 62px;
+    font-family: 'Times New Roman', Times, serif ;
     font-weight: bold;
+    margin: 5px auto 5px auto;
 }
 /*--------------------------------------------MAIN CONTENT------------------------------------------*/
 main{
+    /* background-image: url(../imagenes/fondoMain\ \(2\).jpg); */
     width: auto;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    text-align: left;
-    background: white;
+    margin: 5px 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 main h2{
-    background: black;
-    color: white;
-    font-size: 25px;
+    color: black;
+    background: yellow;
+    font-size: 35px;
+    font-weight: bolder;
     text-align: center;
+    margin: 1px auto 5px auto;
+    font-family: 'Times New Roman', Times, serif;
+    grid-column: 2/6;
+    grid-row: 1/2;
 }
 
-main li{
+/* main li{
     font-size: 25px;
     margin: 1px auto 1px 10px;
     color: red;
@@ -70,34 +85,92 @@ main li p{
 main li b{
     color: black;
     font-size: 23px;
-}
+} */
 
-
+#carouselExampleSlidesOnly1{
+    width: auto;
+    grid-column: 2/6;
+    grid-row: 2/3;
+    margin: 1px auto 10px auto;    
+ }
 
 /*--------------------------------------------------SECTION----------------------------------------*/
 section{
-    width: auto;
-    grid-column: 1/5;
-    grid-row:3/4;
+    width: auto;   
+    /* background-image: url(../imagenes/fondoMain\ \(2\).jpg); */
     background: white;
-    margin: 10px 10px;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); */
 }
-section h2{
+section h2 {
+    background: yellow;
     color: black;
     text-align: center;
+    font-size: 52px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 10px auto 5px 5px;
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
 }
 
- /* #btnPrincipal{
-    margin: 5px auto 5px 10px;
-    padding: 5px;
-    background: white;
-    font-size: 22px;
-    font-weight: bold;
+#carouselExampleSlidesOnly{
+    width: 430px;
+    grid-row: 2/3;
+    margin: 1px auto 10px auto;
+ }
+
+ section .card {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+}
+section .card1 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+section .card3 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 10px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+section .card4 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+section .card5 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+section .card6 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 10px;
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
-#input{
-    margin: 5px auto 5px 10px;
-} */
 #formulario input{
     display: flex;
     margin: 5px auto 5px 10px;
@@ -107,15 +180,15 @@ section h2{
 footer{
     background: black;
     width: auto;
-    grid-column: 1/5;
-    grid-row: 4/5;
-    margin: 10px 1px 1px 1px;
+    /* margin: 10px 1px 1px 1px; */
 
 }
 .pie p{
-    font-size: 24px;
+    margin: 2px auto 2px auto;
+    font-size: 28px;
     text-align: center;
-    color: white;
+    color: yellow;
+    font-family: 'Barrio', cursive;
 }
 
 /*----------------------------------------------------CLASES PARA JS-------------------------- */
