@@ -171,10 +171,10 @@ section .card6 {
     grid-row: 3/4;
 }
 
-#formulario input{
+/* #formulario input{
     display: flex;
     margin: 5px auto 5px 10px;
-}
+} */
 /*----------------------------------------------FOOTER-------------------------------------------------*/
 
 footer{
@@ -203,8 +203,42 @@ footer{
     color: red;
 }
 
+.blanco{
+    color: white;
+}
+
+/*----------------------------------- PAGINA DE PARTICIPAR---------------------------------*/
+
+section p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 5px auto 5px 10px;
+}
 
 
+
+
+/*-----------------------------------------FORMULARIO-----------------------------------*/
+#archivo{
+    margin: 10px auto 5px auto;
+}
+#formulario{
+    background-color: black;
+    margin: 15px auto 1px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.btn-primary {
+    background: yellow;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    margin: 5px auto;
+    color: black;
+}
 
 
 

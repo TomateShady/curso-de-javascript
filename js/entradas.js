@@ -45,3 +45,4 @@ let resultadoCuotas = dividir(resta(suma( multiplicar(precioEntradas, cantidadEn
 alert(`Fecha: ${array1} de Febrero de 2023. Entradas: ${array2}. Total a pagar: $${resultado} en ${cuotas} cuotas de $${resultadoCuotas} Pesos Argentinos`);
 
  console.log(array1, array2);
+ 
