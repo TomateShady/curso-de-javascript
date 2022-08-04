@@ -5,190 +5,145 @@
 }
 
 body{
-    width: auto;   
-    background-image: url(../imagenes/paint\ \(2\).jpg);
+    width: auto;
+    /* background-image: url(../imagenes/paint\ \(2\).jpg); */
 }
-/* --------------------------------------------HEADER--------------------------------------------------- */
+/* --------------------------------------------HEADER INDEX--------------------------------------------------- */
 header{
     width: auto;
 }
-.navbar{
-   background: #000;
-    width: auto;
-   
-}
-.navbar .navbar-brand{
-    color: snow;
-    font-size: 18px;
-    font-weight: bold;
-}
-.navbar .nav-item{
-    font-size: 18px;
-    font-weight: bold;
-}
-.navbar .nav-item .nav-link{
-    color: snow;
-}
-.navbar .nav-item .nav-link:hover{
-    color: gold;
-    text-decoration: underline;
-}
-.btn-outline-success{
-    color: white;
-    border-color: yellow;
-}
-.btn-outline-success:hover{
-    background: yellow;
-    color: black;
-   
-}
-
-header h1{
-    background: yellow;
-    color: black;
-    text-align: center;
-    font-size: 62px;
-    font-family: 'Times New Roman', Times, serif ;
-    font-weight: bold;
-    margin: 5px auto 5px auto;
-}
-/*--------------------------------------------MAIN CONTENT------------------------------------------*/
-main{
-    /* background-image: url(../imagenes/fondoMain\ \(2\).jpg); */
-    width: auto;
-    margin: 5px 10px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-}
-main h2{
-    color: black;
-    background: yellow;
-    font-size: 35px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 1px auto 5px auto;
-    font-family: 'Times New Roman', Times, serif;
-    grid-column: 2/6;
-    grid-row: 1/2;
-}
-
-/* main li{
-    font-size: 25px;
-    margin: 1px auto 1px 10px;
-    color: red;
-}
-main li p{
-    color:blue;
-    font-size:23px;
-}
-main li b{
-    color: black;
-    font-size: 23px;
+/* #inicio {
+    background-image: url(../imagenes/paint\ \(2\).jpg);
 } */
-
-#carouselExampleSlidesOnly1{
+#inicio .navbar{
+    background: black;
     width: auto;
-    grid-column: 2/6;
-    grid-row: 2/3;
-    margin: 1px auto 10px auto;    
- }
-
-/*--------------------------------------------------SECTION----------------------------------------*/
-section{
-    width: auto;   
-    /* background-image: url(../imagenes/fondoMain\ \(2\).jpg); */
-    background: white;
-    display: grid;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto); */
+    
 }
-section h2 {
-    background: yellow;
+#inicio .navbar p{
+    color: white;
+    font-size: 42px;
+    margin: 1px 10px 1px auto;
+    font-family: 'Great Vibes', cursive;
+}
+#inicio .navbar p:hover{
+    color: yellow;
+}
+
+#inicio .navbar .navbar-brand{
+    color: yellow;
+    font-size: 21px;
+    /* font-weight: bold; */
+    font-family: 'Times New Roman', Times, serif;
+    /* text-shadow: 1px 4px 1px blue; */
+
+}
+#inicio .navbar .navbar-brand:hover{
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+#inicio .navbar .nav-item{
+    font-size: 21px;
+    /* font-weight: bold; */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#inicio .navbar .nav-item .nav-link{
+    color: snow;
+    /* text-shadow: 1px 4px 1px blue; */
+}
+#inicio .navbar .nav-item .nav-link:hover{
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#inicio header h1{
     color: black;
+    border-radius: 10px;
     text-align: center;
     font-size: 52px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    margin: 10px auto 5px 5px;
+    background: white;
+    margin: 5px auto 1px auto;
+    width: 500px;
+}
+/*--------------------------------------------MAIN INDEX------------------------------------------*/
+#inicio main{
+    background: rgba(39, 8, 177, 0.021);
+    width: auto;
+    margin: 5px auto 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+#inicio main h2{
+    color: black;
+    background: rgba(255, 255, 255, 0.87);
+    font-size: 55px;
+    text-align: center;
+    margin: 1px auto 5px auto;
+    font-family: 'Londrina Outline', cursive;
     /* grid-column: 2/3;
     grid-row: 1/2; */
 }
 
-#carouselExampleSlidesOnly{
-    width: 430px;
-    grid-row: 2/3;
-    margin: 1px auto 10px auto;
- }
-
- section .card {
-    width: 300px;
-    margin: 10px auto 20px auto;
-    box-shadow: 1px 1px 10px yellow;
+#inicio #carouselExampleSlidesOnly{
+    grid-column: 1/4;
+    grid-row: 1/2;
     border-radius: 10px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-content: center;
-}
-section .card1 {
-    width: 300px;
-    margin: 10px auto 20px auto;
-    box-shadow: 1px 1px 10px yellow;
-    border-radius: 10px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-section .card3 {
-    width: 300px;
-    margin: 10px auto 20px auto;
-    box-shadow: 1px 1px 10px yellow;
-    border-radius: 10px;
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-section .card4 {
-    width: 300px;
-    margin: 10px auto 20px auto;
-    box-shadow: 1px 1px 10px yellow;
-    border-radius: 10px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-section .card5 {
-    width: 300px;
-    margin: 10px auto 20px auto;
-    box-shadow: 1px 1px 10px yellow;
-    border-radius: 10px;
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-section .card6 {
-    width: 300px;
-    margin: 10px auto 20px auto;
-    box-shadow: 1px 1px 10px yellow;
-    border-radius: 10px;
-    grid-column: 3/4;
-    grid-row: 3/4;
+    margin: 5px auto 5px auto;
+    width: 70%;
 }
 
-/* #formulario input{
-    display: flex;
-    margin: 5px auto 5px 10px;
+
+
+/* #carouselExampleSlidesOnly .carousel.inner .carousel-item img {
+   border-radius: 30px;
+   width: auto;
 } */
-/*----------------------------------------------FOOTER-------------------------------------------------*/
 
-footer{
-    background: black;
-    width: auto;
-    /* margin: 10px 1px 1px 1px; */
 
+
+
+
+/*-----------------------------------SECTION INDEX-----------------------*/
+#inicio section .card{
+    margin: 1px auto 5px auto;
+    /* background: rgba(0, 0, 0, 0.089); */
+    width: 400px;
 }
+#inicio section .card-body{
+    margin: 1px auto 1px auto;
+    padding: 10px;
+    /* background: rgba(115, 116, 27, 0.068); */
+}
+#inicio section .card-title{
+    background: none;
+    color: black;
+}
+#inicio section .btn{
+    background: rgba(255, 255, 0, 0.616);
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+   /*----------------------------------------FOOTER INDEX----------------------*/ 
+#inicio footer{
+    background:black;
+    margin: 1px 1px 1px 1px;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+}
+
 .pie p{
-    margin: 2px auto 2px auto;
-    font-size: 28px;
+    margin: 15px auto 15px auto;
+    font-size: 15px;
     text-align: center;
-    color: yellow;
-    font-family: 'Barrio', cursive;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 /*----------------------------------------------------CLASES PARA JS-------------------------- */
@@ -218,31 +173,283 @@ section p{
 
 
 
-
-/*-----------------------------------------FORMULARIO-----------------------------------*/
-#archivo{
-    margin: 10px auto 5px auto;
+/*--------------------------------------------------MAIN DE PAGINA FESTIVAL 2022----------------------------------------*/
+#pagina-festival {
+    background-image: url(../imagenes/noSignaltv.jpg);
 }
-#formulario{
-    background-color: black;
-    margin: 15px auto 1px 10px;
+#pagina-festival .navbar{
+    background: none;
+     width: auto;
+ }
+/* #pagina-festival .navbar:hover{
+    background: rgba(0, 0, 0, 0.671);
+    transition: 1.1s;
+ } */
+ 
+ #pagina-festival .navbar .navbar-brand{
+     color: snow;
+     font-size: 24px;
+     /* font-weight: bold; */
+     font-family: 'Times New Roman', Times, serif;
+     padding: 5px;
+ }
+ #pagina-festival .navbar .navbar-brand:hover{
+    background-color: transparent;
+    font-weight: bold;
+    transform: scale(1.1);
+    text-decoration: none;
+    box-shadow: 1px 3px 6px 3px black;
+    color: white;
+ }
+ #pagina-festival .navbar .nav-item{
+     font-size: 24px;
+     font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+     padding: 5px;
+ }
+ #pagina-festival .navbar .nav-item .nav-link{
+     color: snow;
+ }
+ #pagina-festival .navbar .nav-item .nav-link:hover{
+     background-color:none;
+     font-weight: bold;
+     transform: scale(1.1);
+     text-decoration: none;
+     box-shadow: 1px 3px 6px 3px rgba(0, 0, 0, 0.685);
+     color: white ;
+ }
+#pagina-festival main {
+    width: auto;
+    /* background-image: url(./imagenes/noSignaltv.jpg); */
+    /* background: none; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+#pagina-festival main h1 {
+    background: rgba(0, 0, 0, 0.164);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 1px 3px 2px rgba(192, 192, 192, 0.664);
+    font-size: 52px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 10px auto 5px auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#carouselExampleSlidesOnly{
+    width: 430px;
+    grid-row: 2/3;
+    margin: 1px auto 10px auto;
+ }
+
+ #pagina-festival main .card {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px snow;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+}
+#pagina-festival main .card1 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px snow;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#pagina-festival main .card3 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px snow;
+    border-radius: 10px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#pagina-festival main .card4 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px snow;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#pagina-festival main .card5 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px snow;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#pagina-festival main .card6 {
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-shadow: 1px 1px 10px snow;
+    border-radius: 10px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#pagina-festival footer{
+    background: none;
+    color: black;
+    width: auto;
+    margin: 1px auto 1px auto;
+    padding: 10px;
+}
+
+#pagina-festival footer p{
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    background:none;
+}
+
+
+/*--------------------------------- PAGINA DE PARTICIPAR----------------------------------*/
+
+#participar-index {
+    /* background-image: url(../imagenes/redflower.jpg); */
+    width: auto;
+}
+#participar-index header {
+    margin: 1px auto 1px auto;
+}
+
+#participar-index .navbar{
+    background: none;
+     width: auto;
+ }
+/* #participar-index .navbar:hover{
+    background: rgba(0, 0, 0, 0.527);
+    transition: 1.8s;
+ } */
+ 
+ #participar-index .navbar .navbar-brand{
+     color: black;
+     font-size: 22px;
+     /* font-weight: bold; */
+     font-family: 'Times New Roman', Times, serif;
+ }
+ #participar-index .navbar .navbar-brand:hover{
+
+     text-decoration: underline;
+ }
+/* 
+ #participar-index .navbar .nav-item{
+     font-size: 20px;
+     font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ #participar-index .navbar .nav-item .nav-link{
+     color: white;
+ }
+ #participar-index .navbar .nav-item .nav-link:hover{
+     color: black;
+     text-decoration: none;
+     text-decoration: underline;
+ } */
+ #participar-index header h1{
+     text-align: center;
+     font-family: 'Pinyon Script', cursive;
+     font-size: 90px;
+     font-weight: bold;
+     margin: 5px auto 5px auto;
+     text-decoration: underline;
+ }
+
+ #participar-index main{
+     /* background-image: url(../imagenes/aver2.jpg); */
+     width: auto;
+ }
+/*-----------------------------------------FORMULARIO-----------------------------------*/
+#participar-index #archivo{
+    margin: 15px auto 5px auto;
+}
+#participar-index #formulario{
+    /* background-color: rgba(0, 0, 0, 0.178); */
+    margin: 15px auto 1px auto;
     padding: 10px;
     border-radius: 10px;
     color: white;
+    width: 500px;
 }
-.btn-primary {
-    background: yellow;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    width: auto;
-    margin: 5px auto;
+#participar-index .form-floating .form-select {
+    /* background: #000; */
+    margin: 15px auto 5px auto;
+    padding: 5px;
+ 
+}
+#participar-index label {
     color: black;
 }
 
+#participar-index #btn {
+    background: black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    margin: 10px auto;
+    padding: 6px;
+    color: white;
+}
+
+#participar-index footer {
+    margin: 1px auto 1px auto;
+    width: auto;
+}
+#participar-index footer p {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#participar-index section p{
+    color: black;
+    text-align: center;
+    margin: 10px 10px;
+}
 
 
+/*-------------------------------------------PAGINA DE ENTRADAS--------*/
+#inicio-entradas .navbar{
+ 
+    width: auto;
+}
 
+#inicio-entradas .navbar .navbar-brand{
+    color: black;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: 'Times New Roman', Times, serif;
+    /* text-shadow: 1px 4px 1px blue; */
 
-
-
+}
+#inicio-entradas .navbar .navbar-brand:hover{
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+#inicio-entradas .navbar .nav-item{
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: 'Times New Roman', Times, serif;
+}
+#inicio-entradas .navbar .nav-item .nav-link{
+    color: black;
+    /* text-shadow: 1px 4px 1px blue; */
+}
+#inicio-entradas .navbar .nav-item .nav-link:hover{
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+}

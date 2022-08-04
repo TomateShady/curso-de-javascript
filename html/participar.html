@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
-    <header id="encabezado">  
+  <div id="participar-index">
+    <header>  
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="../index.html">Home</a>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto ">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./2022.html">Festival 2022</a>
@@ -35,90 +39,54 @@
                     <a class="nav-link" href="./login.html">Login</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+              </div> -->
             </div>
           </nav>
-          <h1>Primer Festival de Cine Argentino</h1>
+          <h1>Formulario</h1>
     </header>
 <main>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Informacion sobre el material a enviar
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
+  <form id="formulario">
+    <div class="form-group">
+       <label for="formGroupExampleInput" required>Nombre</label>
+       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su Nombre">
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Términos y condiciones
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
+    <div class="form-group">
+       <label for="formGroupExampleInput2" required>Apellido</label>
+       <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su Apellido">
     </div>
-  </div>
+    <div class="form-group">
+       <label for="exampleFormControlInput1" required>Email</label>
+       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+    </div>
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option>Categorías</option>
+        <option value="1">Cortometraje (h/18 minutos)</option>
+        <option value="2">Largometraje (d/ 40 minutos )</option>
+        <option value="3">Documental (h/30 minutos)</option>
+      </select>
+    
+    </div>
+    <div class="form-group">
+       <input type="file" id="archivo" placeholder="archivo">
+    </div>
+       <button id="btn" type="submit">Enviar</button>
+  </form>
 </main>
-<section>
-    <!-- <h2>Aca iría un section (loading...)</h2> -->
-      <div>
-        <h3>Complete el siguiente formulario</h3>
-      </div>
-
-      <form id="formulario">
-        <div class="form-group">
-          <label for="formGroupExampleInput">Nombre</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su Nombre">
-        </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput2">Apellido</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su Apellido">
-        </div>
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-      </div>
-      <div class="form-group">
-        
-      </div>
-      <div class="form-group">
-        <input type="file" id="archivo" placeholder="archivo">
-      </div>
-      <button class="btn btn-primary" type="submit">Enviar</button>
-    </form>
-    <p>*Una vez envíado el material, en el plazo de 72 horas le enviaremos un mail confirmando o no, su participación en el festival.</p>
-
-     <!-- <form id="formulario">
-      <label for="nombre">Nombre</label>
-     <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-     <input type="text" id="mail" placeholder="Ingrese su email" required>
-     <label for="edad">Edad</label>
-     <input type="number" id="edad" placeholder="Ingrese su edad" required>
-     <label for="file">Subir archivo</label>
-     <input type="file" id="file" placeholder="ingresar archivo">
-     <input type="submit" id="teclaEnviar" value = "Enviar">
-     </form> -->
+<section>>
+     
+    <p>*Una vez envíado el material, en el plazo de 72 horas le enviaremos un mail confirmando su participación, o no, en el festival.</p>
+   
   </section>
-<footer class="pie">
-    <p>Contacto</p>
+<footer>
+    <p> 6550prod@gmail.com</p>
   </footer>   
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../js/participar.js"></script>
+</div>
 </body>
 </html>
