@@ -16,22 +16,24 @@ header{
     background-image: url(../imagenes/paint\ \(2\).jpg);
 } */
 #inicio .navbar{
-    background: black;
+    background: none;
     width: auto;
     
 }
 #inicio .navbar p{
-    color: white;
+    color: black;
     font-size: 42px;
     margin: 1px 10px 1px auto;
     font-family: 'Great Vibes', cursive;
 }
 #inicio .navbar p:hover{
-    color: yellow;
+    color: white;
+    transform:rotateY();
+    transition: 1.2s;
 }
 
 #inicio .navbar .navbar-brand{
-    color: yellow;
+    color: black;
     font-size: 21px;
     /* font-weight: bold; */
     font-family: 'Times New Roman', Times, serif;
@@ -39,7 +41,7 @@ header{
 
 }
 #inicio .navbar .navbar-brand:hover{
-    color: white;
+    color: black;
     font-weight: bold;
     transform: scale(1.1);
 }
@@ -50,11 +52,11 @@ header{
     
 }
 #inicio .navbar .nav-item .nav-link{
-    color: snow;
+    color: black;
     /* text-shadow: 1px 4px 1px blue; */
 }
 #inicio .navbar .nav-item .nav-link:hover{
-    color: white;
+    color: black;
     font-weight: bold;
     transform: scale(1.1);
 }
@@ -75,10 +77,10 @@ header{
     width: auto;
     margin: 5px auto 10px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(4, auto);
 }
-#inicio main h2{
+/* #inicio main h2{
     color: black;
     background: rgba(255, 255, 255, 0.87);
     font-size: 55px;
@@ -87,18 +89,52 @@ header{
     font-family: 'Londrina Outline', cursive;
     /* grid-column: 2/3;
     grid-row: 1/2; */
-}
+ 
 
 #inicio #carouselExampleSlidesOnly{
-    grid-column: 1/4;
-    grid-row: 1/2;
+    grid-column:2/4;
+    grid-row: 1/4;
     border-radius: 10px;
-    margin: 5px auto 5px auto;
-    width: 70%;
+    margin: 5px 5px;
+    width: auto;
 }
-
-
-
+#noticias .card {
+    width: 200px;
+    margin: 10px 5px;
+    box-shadow: 1px 2px 2px grey;
+    background: snow;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#noticias .card1 {
+    width: 200px;
+    margin: 10px 5px;
+    box-shadow: 1px 2px 2px grey;
+    background: snow;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#noticias .card-title {
+    color: black;
+}
+#noticias .card-subtitle {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px auto;
+}
+#noticias .card-text{
+ font-family: 'Great Vibes', cursive;
+ font-size: 28px;
+}
+#noticias .card-text1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+#noticias span{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin:10px auto;
+}
 /* #carouselExampleSlidesOnly .carousel.inner .carousel-item img {
    border-radius: 30px;
    width: auto;
