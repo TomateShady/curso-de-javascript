@@ -1,8 +1,9 @@
+
 [
-    {"nombre": "Día 1", "Precio": 1500, "id": 1},
-    {"nombre": "Día 2", "Precio": 1500, "id": 2},
-    {"nombre": "Día 3", "Precio": 1500, "id": 3},
-    {"nombre": "Tres días", "Precio": 4000, "id": 4}
+    {"nombre": "Día 1", "Precio": "$2500", "id": "(Cine, Danzas)"},
+    {"nombre": "Día 2", "Precio": "$2500", "id": "(Teatro, Literatura)"},
+    {"nombre": "Día 3", "Precio": "$2500", "id": "(Música, Pinturas)"},
+    {"nombre": "Tres días", "Precio": "$7000", "id": "(Incluye todo)"}
 ]
 
 

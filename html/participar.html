@@ -21,25 +21,6 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="../index.html">Home</a>
-              <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto ">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./2022.html">Festival 2022</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">¿Quienes somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./participar.html">Participar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./entradas.html">Entradas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./login.html">Login</a>
-                  </li>
-                </ul>
-              </div> -->
             </div>
           </nav>
           <h1>Formulario</h1>
@@ -48,25 +29,29 @@
   <form id="formulario">
     <div class="form-group">
        <label for="formGroupExampleInput" required>Nombre</label>
-       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su Nombre">
+       <input type="text" class="form-control" id="nombreusuario" placeholder="Ingrese su Nombre">
     </div>
     <div class="form-group">
        <label for="formGroupExampleInput2" required>Apellido</label>
-       <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su Apellido">
+       <input type="text" class="form-control" id="apellidousuario" placeholder="Ingrese su Apellido">
     </div>
     <div class="form-group">
        <label for="exampleFormControlInput1" required>Email</label>
-       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+       <input type="email" class="form-control" id="emailusuario" placeholder="nombre@ejemplo.com">
     </div>
     <div class="form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <select class="form-select" id="categoriausuario" aria-label="Floating label select example">
         <option>Categorías</option>
-        <option value="1">Cortometraje (h/18 minutos)</option>
-        <option value="2">Largometraje (d/ 40 minutos )</option>
+        <option value="Cortometraje" id= 1 >Cortometraje (h/18 minutos)</option>
+        <option value="Largometraje" id= 2 >Largometraje (d/ 40 minutos )</option>
         <option value="3">Documental (h/30 minutos)</option>
-        <option value="4">Pinturas</option>
-        <option value="5">Vestuarios</option>
-        <option value="6">Puestas de escena</option>
+        <option value="4">Pintura</option>
+        <option value="5">Musica</option>
+        <option value="6">Esculturas</option>
+        <option value="7">Puestas de escena</option>
+        <option value="8">Danza</option>
+        <option value="9">Literatura</option>
+        <option value="10">Stand-up</option>
       </select>
     
     </div>
@@ -76,8 +61,7 @@
        <button id="btn" type="submit">Enviar</button>
   </form>
 </main>
-<section>>
-     
+<section>
     <p>*Una vez envíado el material, en el plazo de 72 horas le enviaremos un mail confirmando su participación, o no, en el festival.</p>
    
   </section>
