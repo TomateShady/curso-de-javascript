@@ -33,7 +33,7 @@ if(usuarioStorage){
        const username = document.getElementById("sesion");
           const li = document.createElement("div");
           li.innerHTML = `
-          <h2>${usuarioStorage}</h2>      
+          <h2>usuario: ${usuarioStorage}</h2>      
           `;
           li.className = "rojo";
           username.append(li);
